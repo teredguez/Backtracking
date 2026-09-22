@@ -73,7 +73,7 @@ public class SudokuOne {
 
 	private boolean checkRegion(int row, int col, int num) {
 		int startRow = row - (row % SUBGRID);
-		int startCol = col - (row % SUBGRID);
+		int startCol = col - (col % SUBGRID);
 
 		for (int i = startRow; i < startRow + SUBGRID; i++) {
 			for (int j = startCol; j < startCol + SUBGRID; j++) {
